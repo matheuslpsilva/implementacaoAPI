@@ -1,0 +1,184 @@
+:root {
+  --fundo: #161b26;
+  --cartao: #1f2634;
+  --borda: #2e3748;
+  --texto: #e6e9ef;
+  --texto-fraco: #97a1b3;
+  --destaque: #4dd6c1;
+  --erro: #ff7a7a;
+  --erro-fundo: #35222a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: var(--fundo);
+  color: var(--texto);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  color: var(--destaque);
+  letter-spacing: -0.02em;
+}
+
+header p {
+  color: var(--texto-fraco);
+  font-size: 0.95rem;
+}
+
+main {
+  width: 100%;
+  max-width: 480px;
+}
+
+.busca {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.busca input {
+  flex: 1;
+  padding: 13px 16px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  letter-spacing: 0.08em;
+  color: var(--texto);
+  background-color: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+}
+
+.busca input::placeholder {
+  color: var(--texto-fraco);
+}
+
+.busca input:focus,
+.busca button:focus {
+  outline: 2px solid var(--destaque);
+  outline-offset: 2px;
+}
+
+.busca button {
+  padding: 13px 26px;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #12201d;
+  background-color: var(--destaque);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.busca button:hover {
+  background-color: #6fe3d1;
+}
+
+.busca button:disabled {
+  background-color: var(--borda);
+  color: var(--texto-fraco);
+  cursor: wait;
+}
+
+.cartao {
+  background-color: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 26px;
+}
+
+.cartao.vazio {
+  text-align: center;
+  color: var(--texto-fraco);
+  padding: 46px 26px;
+}
+
+.cartao.vazio .icone {
+  display: block;
+  font-size: 3.2rem;
+  color: var(--borda);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.cartao .endereco {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cartao .cidade {
+  color: var(--texto-fraco);
+  margin-bottom: 20px;
+}
+
+.cartao dl {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 9px 16px;
+  font-size: 0.92rem;
+  border-top: 1px solid var(--borda);
+  padding-top: 18px;
+}
+
+.cartao dt {
+  color: var(--texto-fraco);
+}
+
+.aviso {
+  background-color: var(--erro-fundo);
+  border: 1px solid var(--erro);
+  border-radius: 10px;
+  color: var(--erro);
+  padding: 18px 22px;
+  font-size: 0.95rem;
+}
+
+.carregando {
+  color: var(--texto-fraco);
+  text-align: center;
+  padding: 26px;
+}
+
+footer {
+  margin-top: 44px;
+  font-size: 0.82rem;
+  color: var(--texto-fraco);
+}
+
+footer a {
+  color: var(--destaque);
+}
+
+@media (max-width: 480px) {
+  .busca {
+    flex-direction: column;
+  }
+
+  .cartao dl {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .cartao dd {
+    margin-bottom: 10px;
+  }
+}
