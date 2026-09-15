@@ -19,7 +19,8 @@ https://viacep.com.br/ws/89201000/json/
 Não precisa de servidor. É só abrir o `index.html` no navegador que já funciona.
 
 **5. Print da tela funcionando**
-<img width="1916" height="932" alt="image" src="https://github.com/user-attachments/assets/074ae1b7-bf6c-4297-b782-0574a0ec0b18" />
+<img width="1915" height="982" alt="APIpronto" src="https://github.com/user-attachments/assets/56d3e886-dfb5-4d97-a3e5-ded22076f9ce" />
+
 
 
 **6. Uma dificuldade que eu tive**
