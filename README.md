@@ -10,6 +10,8 @@ Logradouro, bairro, cidade, UF, DDD e código do IBGE do endereço correspondent
 
 **3. O endereço que eu chamei**
 https://viacep.com.br/ws/89201000/json/
+
+
 <img width="458" height="349" alt="image" src="https://github.com/user-attachments/assets/0c02ea5d-e606-4926-b8db-e38721762f6e" />
 
 
