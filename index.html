@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de CEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Buscador de CEP</h1>
+    <p>Digite um CEP e descubra o endereço</p>
+  </header>
+
+  <main>
+    <div class="busca">
+      <input
+        id="campoCep"
+        type="text"
+        inputmode="numeric"
+        maxlength="9"
+        placeholder="89201-000"
+        autocomplete="off">
+      <button id="botaoBuscar" type="button">Buscar</button>
+    </div>
+
+    <section id="resultado" aria-live="polite">
+      <div class="cartao vazio">
+        <span class="icone">?</span>
+        <p>Nenhuma busca ainda</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Dados da API <a href="https://viacep.com.br/" target="_blank" rel="noopener">ViaCEP</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
